@@ -1,6 +1,5 @@
-# Web-Development-Bootcamp
- My journey with Dr. Angela Yu course
 # Web Development Bootcamp Progress
+ My journey with Dr. Angela Yu course
 
 - ✔️ **Introduction to HTML**
 - ✔️ **Intermediate HTML**
