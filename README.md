@@ -8,8 +8,8 @@
 - ✔️ **CSS Properties**
 - ✔️ **Intermediate CSS**
 - ✔️ **Advanced CSS**
-- ✔️ **Flexbox**
-- ✔️ **Grid**
+- ❌ **Flexbox**
+- ❌ **Grid**
 - ❌ **Bootstrap**
 - ❌ **Web Design School - Create a Website that People Love**
 - ❌ **Capstone Project 2 - Personal Site**
