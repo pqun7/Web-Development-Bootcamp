@@ -8,7 +8,7 @@
 - ✔️ **CSS Properties**
 - ✔️ **Intermediate CSS**
 - ✔️ **Advanced CSS**
-- ❌ **Flexbox**
+- ✔️ **Flexbox**
 - ❌ **Grid**
 - ❌ **Bootstrap**
 - ❌ **Web Design School - Create a Website that People Love**
