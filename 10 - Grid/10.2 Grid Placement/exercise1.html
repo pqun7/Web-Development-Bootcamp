@@ -14,7 +14,7 @@
     .container {
       height: 100vh;
       display: grid;
-      gap: 3rem;
+      gap: 1rem;
       grid-template-columns: 1fr 1fr 1.5fr;
       grid-template-rows: 1fr 1fr;
     }
@@ -24,10 +24,21 @@
       color: white;
       font-family: Arial, Helvetica, sans-serif;
       background-color: blueviolet;
-      /* TODO: Use Flexbox to align the text to the center horizontally and vertically. 
-      See goal1 image.
-      */
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    .item.cowboy{
+      grid-column: span 2;
+    }
+    .item.astronaut{
+      order: 1;
+      grid-column: span 2;
+    }
+    .item.book{
+      grid-row: span 2;
+    }
+
   </style>
 </head>
 
