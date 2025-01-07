@@ -53,6 +53,9 @@
     }
 
     .grid-container {
+      display: grid;
+      grid-template-rows: 1fr 1fr 2fr;
+      grid-template-columns: auto 400px minmax(200px, 500px);
       width: 80%;
       background-color: #ddd;
       padding: 20px;
@@ -95,15 +98,7 @@
     <div class="grid-item">min 200px max 500px wide</div>
     <div class="grid-item">50px high</div>
   </div>
-  <textarea id="user-css" placeholder="Write your CSS code here..." rows="25">
-/* Write your CSS code below to make the purple items size, grow and shrink like the green ones.*/
-
-.grid-container {
- 
-}
   
-  </textarea>
-  <button onclick="applyUserCss()">Apply CSS</button>
 
   <script>
     function applyUserCss() {
