@@ -10,23 +10,61 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
     }
 
     .board-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 320px 351px auto;
+      grid-template-rows: 414px 285px 33px;
       gap: 9px;
       background: #000;
-      
       width: 748px;
       height: 748px;
+      max-width: 748px;
+      max-height: 748px;
     }
+    .box {
+      background-color: #F0F1EC;
+    }
+
     .box.num1 {
       background: #E72F24;
     }
     .box.num2 {
+      grid-column: span 2;
       background: #F0F1EC;
+    }
+    .box.num3 {
+      grid-row: span 1;
+      background: #F0F1EC;
+    }
+    
+    .box.num5 {
+      grid-row: span 2;
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      gap: 9px;
+      background: #F0F1EC;
+    }
+    .box.num5-1 {
+      background: #004592;
+      border-bottom: #000 10px solid;
+    }
+    
+    .box.num7 {
+      display: grid;
+      grid-template-columns: 198px 153px;
+      grid-template-rows: 31px;
+      background: #F0F1EC;
+    }
+    .box.num7-1 {
+      background: #F9D01E;
+    }
+    .box.num7-2 {
+      background: #232629;
     }
     /* 
     Write your CSS here 
@@ -49,9 +87,16 @@
       <div class="box num1"></div>
       <div class="box num2"></div>
       <div class="box num3"></div>
-      <div class="box num5"></div>
+      <div class="box num4"></div>
+      <div class="box num5">
+        <div class="box num5-1"></div>
+        <div class="box num5-2"></div>
+      </div>
       <div class="box num6"></div>
-      <div class="box num7"></div>
+      <div class="box num7">
+        <div class="box num7-1"></div>
+        <div class="box num7-2"></div>
+      </div>
       <div class="box num8"></div>
       <div class="box num9"></div>
   </div>
