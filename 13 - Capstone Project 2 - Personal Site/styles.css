@@ -1,0 +1,116 @@
+:root {
+  --primary-color: #1b1f5b; /* Dark blue */
+  --secondary-color: #4c1146; /* Dark purple */
+  --tertiary-color: #1a0f24; /* Final background color */
+  --text-color: #ffffff; /* White for text */
+  --hover-color: #67aaff; /* Interaction color */
+  --button-bg: #1a1f40; /* Button background color */
+  --button-hover-bg: #67aaff; /* Button hover background color */
+  --button-hover-text: #0a0e27; /* Button hover text color */
+  --nav-bg: rgba(15, 20, 60, 0.95); /* Navigation bar background */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow color */
+}
+
+body {
+  background: radial-gradient(circle at 20% 60%, var(--primary-color), transparent 80%),
+              radial-gradient(circle at 80% 60%, var(--secondary-color), transparent 80%), var(--tertiary-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  gap: 1rem; 
+
+  font-size: 20px;
+  font-weight: bold; 
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 1px, rgba(30, 41, 59, 0.5) 1px);
+  background-size: 4px 4px;
+  border-radius: 10px;
+  
+}
+
+header .logo {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px var(--shadow-color);
+  background-image: url('https://cdn.glitch.com/7b3b1b7e-7b3b-4b7b-8b3b-7b3b1b7b3b1b%2Flogo.png?v=1628580130007');
+  background-size: cover;
+
+}
+  
+header .text {
+  flex-grow: 1;
+}
+
+header .button {
+  flex-shrink: 0;
+}
+
+.highlight {
+  font-size: 48px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold; 
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.experience{
+  font-family: "Albert Sans", serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+.projects{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  padding-top: 50px;
+}
+
+.card {
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.15); 
+  padding: 2.5rem;
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
+  height: 260px;
+  width: 200px;
+}
+
+.project-details{
+  font-family: "Albert Sans", serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+}
+
