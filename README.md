@@ -14,7 +14,7 @@
 - ✔️ **Web Design School - Create a Website that People Love**
 - ✔️ **Capstone Project 2 - Personal Site**
 - ✔️ **Introduction to Javascript ES6**
-- ❌ **Intermediate Javascript**
+- ✔️ **Intermediate Javascript**
 - ❌ **The Document Object Model (DOM)**
 - ❌ **Boss Level Challenge 1 - The Dicee Game**
 - ❌ **Advanced Javascript and DOM Manipulation**
