@@ -1,0 +1,140 @@
+:root {
+  --primary-color: #5b1b1f; /* Dark blue */
+  --secondary-color: #4c1146; /* Dark purple */
+  --tertiary-color: #1a0f24; /* Final background color */
+  --text-color: #ffffff; /* White for text */
+  --hover-color: #67aaff; /* Interaction color */
+  --button-bg: #b97a7a; /* Button background color */
+  --button-hover-bg: #ff67b6; /* Button hover background color */
+  --button-hover-text: #0a0e27; /* Button hover text color */
+  --nav-bg: rgba(15, 20, 60, 0.95); /* Navigation bar background */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow color */
+}
+
+body {
+  background: radial-gradient(
+      circle at 20% 60%,
+      var(--primary-color),
+      transparent 80%
+    ),
+    radial-gradient(circle at 80% 60%, var(--secondary-color), transparent 80%),
+    var(--tertiary-color);
+  color: var(--text-color);
+  font-family: "Arial", sans-serif;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* .container > * {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+
+.img1 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+.img2 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  display: block;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dice {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  border: none;
+  width: 15em;
+  height: 5em;
+  border-radius: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  background: #1c1a1c;
+  cursor: pointer;
+  transition: all 450ms ease-in-out;
+}
+
+.sparkle {
+  fill: #aaaaaa;
+  transition: all 800ms ease;
+}
+
+.text {
+  font-weight: 600;
+  color: #aaaaaa;
+  font-size: medium;
+}
+
+.btn:hover {
+  background: linear-gradient(120deg, var(--button-hover-bg), var(--button-bg));
+  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+    inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px 4px rgba(255, 255, 255, 0.2), 0px 0px 180px 0px #ff1774;
+  transform: translateY(-2px);
+}
+
+.btn:hover .text {
+  color: white;
+}
+
+.btn:hover .sparkle {
+  fill: white;
+  transform: scale(1.2);
+}
+
+p {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-family: "Albert Sans", serif;
+  text-align: center;
+}
