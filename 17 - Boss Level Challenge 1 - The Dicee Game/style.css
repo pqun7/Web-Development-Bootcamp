@@ -138,3 +138,14 @@ p {
   font-family: "Albert Sans", serif;
   text-align: center;
 }
+
+
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-5px, 5px) rotate(15deg); }
+    40% { transform: translate(5px, -5px) rotate(-10deg); }
+    60% { transform: translate(-5px, 5px) rotate(10deg); }
+    80% { transform: translate(5px, -5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+  
