@@ -15,14 +15,26 @@ function playSound(key){
     }
 }
 
+function makeAnimation(currentKey){
+    var elm = document.querySelector(`.${currentKey}`);
+    elm.classList.add("animation");
+    setTimeout(function(){
+        elm.classList.remove("animation");
+    }, 100);
+}
+
 var drums = document.querySelectorAll(".drum");
 drums.forEach(drum => {
     drum.addEventListener("click", (event) => {
         var btn = event.target.textContent.trim();
         playSound(btn);
+        makeAnimation(btn);
     })
 })
 
 document.addEventListener("keydown", (event) => {
     playSound(event.key);
+    makeAnimation(event.key);
+
 });
+
