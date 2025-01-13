@@ -1,33 +1,28 @@
+var keywords = {
+    "w": "./sounds/tom-1.mp3",
+    "a": "./sounds/tom-2.mp3",
+    "s": "./sounds/tom-3.mp3",
+    "d": "./sounds/tom-4.mp3",
+    "j": "./sounds/snare.mp3",
+    "k": "./sounds/crash.mp3",
+    "l": "./sounds/kick-bass.mp3"
+};
 
-
-
-const fs = require('fs');
-const path = require('path');
-
-// تحديد مسار المجلد
-const folderPath = "C:\\Users\\Administrator\\OneDrive\\المستندات\\GitHub\\Web-Development-Bootcamp\\17 - Boss Level Challenge 1 - The Dicee Game\\sounds";
-
-// قراءة محتويات المجلد
-fs.readdir(folderPath, (err, files) => {
-    if (err) {
-        console.error('حدث خطأ أثناء قراءة المجلد:', err);
-        return;
+function playSound(key){
+    if (keywords[key]){
+        var sound = new Audio(keywords[key]);
+        sound.play();
     }
+}
 
-    // التكرار عبر الملفات
-    files.forEach((file) => {
-        const filePath = path.join(folderPath, file);
+var drums = document.querySelectorAll(".drum");
+drums.forEach(drum => {
+    drum.addEventListener("click", (event) => {
+        var btn = event.target.textContent.trim();
+        playSound(btn);
+    })
+})
 
-        // التحقق إذا كان العنصر ملفًا
-        fs.stat(filePath, (err, stats) => {
-            if (err) {
-                console.error('حدث خطأ أثناء فحص الملف:', err);
-                return;
-            }
-
-            if (stats.isFile()) {
-                console.log(`Processing file: ${file}`);
-            }
-        });
-    });
+document.addEventListener("keydown", (event) => {
+    playSound(event.key);
 });
