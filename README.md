@@ -18,7 +18,7 @@
 - ✔️ **The Document Object Model (DOM)**
 - ✔️ **Boss Level Challenge 1 - The Dicee Game**
 - ✔️ **Advanced Javascript and DOM Manipulation**
-- ❌ **jQuery**
+- ✔️ **jQuery**
 - ❌ **Boss Level Challenge 2 - The Simon Game**
 - ❌ **The Unix Command Line**
 - ❌ **Backend Web Development**
