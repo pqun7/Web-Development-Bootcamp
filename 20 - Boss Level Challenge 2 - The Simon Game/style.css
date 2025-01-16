@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #E23E57; /* Primary color - pinkish red */
+    --secondary-color: #88304E; /* Secondary color - dark purple */
+    --tertiary-color: #522546; /* Final background color */
+    --text-color: #ffffff; /* White for text */
+    --hover-color: #F26D85; /* Interaction color */
+    --button-bg: #88304E; /* Button background color */
+    --button-hover-bg: #E23E57; /* Button hover background color */
+    --button-hover-text: #311D3F; /* Button hover text color */
+    --nav-bg: rgba(49, 29, 63, 0.95); /* Navigation bar background */
+    --shadow-color: rgba(0, 0, 0, 0.5); /* Shadow color */
+  }
+  
+
+body {
+    background: radial-gradient(
+        circle at 20% 60%,
+        var(--primary-color),
+        transparent 80%
+      ),
+      radial-gradient(circle at 70% 60%, var(--secondary-color), transparent 80%),
+      var(--tertiary-color);
+    color: var(--text-color);
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: lightsalmon; */
+}
+@media (max-width: 660px) {
+    h1{
+        font-size: 2.2rem !important; 
+    }
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'DePixel', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    gap: 40px;
+    margin-top: 20px;
+    border-top: 1330px;
+
+}
+
+.btn{
+    width: 200px;
+    height: 200px;
+    border-radius: 48px;
+}
+
+.red{
+    border: none;
+    background-color: rgb(255, 60, 60) ;
+}
+.blue{
+    order: 2;
+    border: none;
+    background-color: rgb(60, 60, 255);
+}
+.green{
+    border: none;
+    background-color: rgb(60, 128, 60);
+
+}
+.yellow{
+    border: none;
+    background-color: rgb(255, 255, 60);
+}
+
+
+.effect-button{
+    box-shadow: 
+    inset 0px -4px 10px 0px rgba(255, 255, 255, 0.5),
+    0px 4px 15px 0px rgba(41, 31, 31, 0.3), 
+    0px 0px 25px rgba(255, 255, 255, 0.8);
+}
