@@ -1,16 +1,13 @@
-// let timeoutID;
-// const intervalID = setInterval(() => {
-//     $('h1').css("opacity", 0.8);
-//     timeoutID = setTimeout(() => {
-//         $('h1').css("opacity", 1);
-//     }, 300); 
-// }, 500);
+let timeoutID;
+const intervalID = setInterval(() => {
+    $('h1').animate({ opacity: 0.5 }, 400).animate({ opacity: 1 }, 400);
+}, 1000); 
 
-// $(".btn").click(() => {
-//     clearTimeout(timeoutID); 
-//     clearInterval(intervalID);
-//     $('h1').css("opacity", 1);
-// });
+$(".btn").click(() => {
+    clearTimeout(timeoutID); 
+    clearInterval(intervalID);
+    $('h1').stop(true).css("opacity", 1); 
+});
 
 const GameConfig = (()=>{
     const buttons = {
