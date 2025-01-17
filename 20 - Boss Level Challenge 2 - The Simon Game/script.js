@@ -43,6 +43,8 @@ class GameState{
         this.userPressed = false;
     }
 
+    
+
     addingEffect(button){
         button.addClass("effect-button");
         setTimeout(() => {
@@ -63,11 +65,12 @@ class GameState{
     startGameCycle(){
         var n = this.count;
         this.header.text(`Level ${this.level}`)
+
         if(!this.isPlayerTurn && !this.userPressed){
-            var intervalID = setInterval(() => {
+            this.userPressed = true;
+            var intervalID = setInterval(() => {        
                 this.savePlaces.push(this.selectBtn());
                 n--;
-                this.userPressed = true;
                 if(n <= 0){
                     clearInterval(intervalID);
                     this.isPlayerTurn = true;
@@ -114,7 +117,7 @@ class GameState{
     }
 
     handleLoss(){
-        this.header.text("Game Over!")
+        this.header.text("Game Over! Press Any Button to Restart")
         this.level = 1;
         this.isPlayerTurn = false;
         this.savePlaces = []
