@@ -34,13 +34,16 @@ const GameConfig = (()=>{
 
 class GameState{
     constructor(){
+        this.restGame();
+        this.header = $(".level-title");
+    }
+    restGame(){
+        this.userPressed = false;
         this.isPlayerTurn = false;
         this.level = 1;
         this.speed = 450; // min speed 200ms
         this.savePlaces = [];
         this.count = 4;
-        this.header = $(".level-title");
-        this.userPressed = false;
     }
 
     
@@ -118,9 +121,7 @@ class GameState{
 
     handleLoss(){
         this.header.text("Game Over! Press Any Button to Restart")
-        this.level = 1;
-        this.isPlayerTurn = false;
-        this.savePlaces = []
+        this.restGame();
         var sound = new Audio("./sounds/wrong.mp3");
         sound.play()
     }
