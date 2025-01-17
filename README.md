@@ -20,7 +20,7 @@
 - ✔️ **Advanced Javascript and DOM Manipulation**
 - ✔️ **jQuery**
 - ✔️ **Boss Level Challenge 2 - The Simon Game**
-- ❌ **The Unix Command Line**
+- ✔️ **The Unix Command Line**
 - ❌ **Backend Web Development**
 - ❌ **Node.js**
 - ❌ **Express.js with Node.js**
