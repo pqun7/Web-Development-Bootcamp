@@ -21,7 +21,7 @@
 - ✔️ **jQuery**
 - ✔️ **Boss Level Challenge 2 - The Simon Game**
 - ✔️ **The Unix Command Line**
-- ❌ **Backend Web Development**
+- ✔️ **Backend Web Development**
 - ❌ **Node.js**
 - ❌ **Express.js with Node.js**
 - ❌ **EJS**
