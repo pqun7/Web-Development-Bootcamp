@@ -11,7 +11,7 @@
 - ✔️ **Flexbox**
 - ✔️ **Grid**
 - ✔️ **Bootstrap**
-- ✔️ **Web Design School - Create a Website that People Love**
+- ✔️ **Web Design School - Create a Website that People Love** 
 - ✔️ **Capstone Project 2 - Personal Site**
 - ✔️ **Introduction to Javascript ES6**
 - ✔️ **Intermediate Javascript**
