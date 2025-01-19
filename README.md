@@ -22,7 +22,7 @@
 - ✔️ **Boss Level Challenge 2 - The Simon Game**
 - ✔️ **The Unix Command Line**
 - ✔️ **Backend Web Development**
-- ❌ **Node.js**
+- ✔️ **Node.js**
 - ❌ **Express.js with Node.js**
 - ❌ **EJS**
 - ❌ **Capstone Project - Create a Blog web application**
