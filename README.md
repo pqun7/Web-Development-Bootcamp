@@ -24,7 +24,7 @@
 - ✔️ **Backend Web Development**
 - ✔️ **Node.js**
 - ✔️ **Express.js with Node.js**
-- ❌ **EJS**
+- ✔️ **EJS**
 - ❌ **Capstone Project - Create a Blog web application**
 - ❌ **Git, Github and Version Control**
 - ❌ **Application Programming Interfaces (APIs)**
