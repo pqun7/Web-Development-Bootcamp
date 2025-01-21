@@ -23,7 +23,7 @@
 - ✔️ **The Unix Command Line**
 - ✔️ **Backend Web Development**
 - ✔️ **Node.js**
-- ❌ **Express.js with Node.js**
+- ✔️ **Express.js with Node.js**
 - ❌ **EJS**
 - ❌ **Capstone Project - Create a Blog web application**
 - ❌ **Git, Github and Version Control**
