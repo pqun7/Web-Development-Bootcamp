@@ -1,0 +1,153 @@
+/* https://www.youtube.com/watch?v=SgmNxE9lWcY */
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0; 
+}
+
+#btn{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    background-color: rgb(251, 202, 79);
+    border: 10px solid rgb(108, 248, 168);
+    border-radius: 5px;
+
+    /* transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0.1s; */
+
+    /* transition: transform 0.3s ease-out 0.1s, background-color 0.3s, color 0.3s; */
+    transition: all 0.3s ease-out 0.1s;
+}
+
+#btn:hover{
+    transform: translateY(-10px);
+    background-color: brown;
+}
+
+
+/* Utility classes */
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+.animate.animate--infinite{
+    animation-iteration-count: infinite;
+}
+
+.animate.animate--delay-1s{
+    animation-delay: 1s;
+}
+
+.animate.animate--fast{
+    animation-duration: 0.6;
+}
+
+.animate.animate--slow{
+    animation-duration: 3s;
+}
+
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.slideInLeft{
+    /* animation: slideInLeft 0.5s forwards; */
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in;
+    
+}
+
+
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+
+.slideInRight{
+    /* animation: slideInLeft 0.5s forwards; */
+    animation-name: slideInRight;
+    animation-timing-function: ease-in;
+}
+
+
+@keyframes rotate{
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.rotate{
+    animation-name: rotate;
+    animation-timing-function: linear;
+    transform-origin: top left;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100%{
+        transform: translateY(0);
+    }
+    
+    /* 20%{
+        transform: translateY(0);
+    } */
+
+    40%{
+        transform: translateY(-30px);
+    }
+
+    /* 50%{
+        transform: translateY(0);
+    } */
+    60%{
+        transform: translateY(-15px);
+    }
+/* 
+    80%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    } */
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+    animation-duration: 1.3s;
+}
+
+h1{
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    /* animation: slideInLeft 0.5s forwards; */
+    /* animation-name: slideInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1; 
+    animation-direction: normal;
+    animation-fill-mode: forwards; */
+
+    transform: translateX(-150px);
+}
