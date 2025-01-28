@@ -71,15 +71,18 @@ app.get("/basicAuth", async (req, res) => {
 app.get("/apiKey", async (req, res) => {
   //TODO 4: Write your code here to hit up the /filter endpoint
   try {
-    const response = await axios.get("https://secrets-api.appbrewery.com/filter", {
-      params: {
-        score: 5,
-        apiKey: yourAPIKey
-      },
-    });
+    const response = await axios.get(
+      "https://secrets-api.appbrewery.com/filter",
+      {
+        params: {
+          score: 5,
+          apiKey: yourAPIKey,
+        },
+      }
+    );
     const result = JSON.stringify(response.data);
     console.log(response.data);
-    res.render("index.ejs", {content: result})
+    res.render("index.ejs", { content: result });
   } catch (error) {
     console.error("Failed to make request:", error.message);
     res.render("index.ejs", {
@@ -93,17 +96,19 @@ app.get("/apiKey", async (req, res) => {
 app.get("/bearerToken", async (req, res) => {
   //TODO 5: Write your code here to hit up the /secrets/{id} endpoint
   //and get the secret with id of 42
-  try{
-    const response = await axios.get("https://secrets-api.appbrewery.com/secrets/42",{
-      headers:{
-        "Authorization" : `Bearer ${yourBearerToken}`
+  try {
+    const response = await axios.get(
+      "https://secrets-api.appbrewery.com/secrets/42",
+      {
+        headers: {
+          Authorization: `Bearer ${yourBearerToken}`,
+        },
       }
-    })
+    );
     const result = JSON.stringify(response.data);
     console.log(response.data);
-    res.render("index.ejs", {content: result});
-
-  }catch(error){
+    res.render("index.ejs", { content: result });
+  } catch (error) {
     console.error("Failed to make request: ", error.message);
     res.render("index.ejs", {
       error: error.message,
